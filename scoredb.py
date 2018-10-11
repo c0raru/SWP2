@@ -110,7 +110,6 @@ class ScoreDB(QWidget):
             self.scoredb.append({"Name": nametext, "Age": int(agetext), "Score": int(scoretext)})
         except ValueError:
             self.lbl17.setText("Wrong Type")
-        else:
             self.showdb('Name')
         
     def Del(self,name):
